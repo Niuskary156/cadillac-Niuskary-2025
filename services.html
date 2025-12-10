@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Niuskary’s Cadillac EV Project — Services</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="java.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Cadillac EV Services (Demo)</h1>
+    <p>This page demonstrates my JavaScript skills with a calculated order form. The services are fictional, but they represent how Cadillac EV rentals or packages could look.</p>
+
+    <form id="orderForm">
+      <label>
+        Rental Days:
+        <input type="number" id="days" value="1" min="1">
+      </label>
+      <label>
+        Model:
+        <select id="model">
+          <option value="lyriq">Lyriq ($180/day)</option>
+          <option value="celestiq">Celestiq ($400/day)</option>
+          <option value="escaladeiq">Escalade IQ ($300/day)</option>
+        </select>
+      </label>
+      <label>
+        Premium Charging Package ($150):
+        <input type="checkbox" id="charging">
+      </label>
+      <label>
+        Rush Delivery ($250):
+        <input type="checkbox" id="rush">
+      </label>
+
+      <div class="totals">
+        <p>Subtotal: $<span id="subtotal">0.00</span></p>
+        <p>Tax: $<span id="tax">0.00</span></p>
+        <p>Total: $<span id="total">0.00</span></p>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Niuskary’s Cadillac EV Project (Educational)</p>
+  </footer>
+</body>
+</html>
+
