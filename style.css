@@ -1,0 +1,105 @@
+:root {
+  --brand-bg: #2e0854;      /* deep violet */
+  --brand-accent: #7c3aed;  /* bright violet */
+  --brand-light: #f8f5fc;   /* soft violet background */
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: var(--brand-light);
+  color: #1f1f1f;
+  margin: 0;
+}
+
+header, footer {
+  background: var(--brand-bg);
+  color: white;
+  padding: 1rem;
+}
+/* Make the whole page use flex layout */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content grows to fill space */
+main, section.hero {
+  flex: 1;
+}
+
+/* Footer stays at the bottom */
+footer {
+  background: var(--brand-bg);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  margin-top: auto; /* pushes footer down */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a.active {
+  background: var(--brand-accent);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.slider {
+  position: relative;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.slides {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.current {
+  display: block;
+}
+
+.prev, .next {
+  background: var(--brand-accent);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc;
+  border: none;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: var(--brand-accent);
+}
